@@ -13,7 +13,7 @@
 
 5. Eyerus Aderajew  |    15      |
 
-6. Sosina Asfaw     |            |
+6. Sosina Asfaw     |    46      |
 
 # Group Two #
 
