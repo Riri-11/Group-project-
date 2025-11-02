@@ -1,0 +1,295 @@
+/* Custom properties based on the style-guide.md */
+:root {
+    /* Primary Colors */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradient Colors */
+    --light-slate-blue: hsl(252, 100%, 67%); /* (background) */
+    --light-royal-blue: hsl(241, 81%, 54%); /* (background) */
+    --violet-blue: hsla(256, 72%, 46%, 1); /* (circle) */
+    --persian-blue: hsla(241, 72%, 46%, 0); /* (circle) */
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Fonts */
+    --font-family: 'Hanken Grotesk', sans-serif;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    font-size: 18px;
+    background-color: var(--pale-blue);
+}
+
+/* --- Component Container (Mobile Default) --- */
+.component {
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0 10px 30px hsla(241, 81%, 54%, 0.1);
+}
+
+/* --- 1. Results Section --- */
+.results {
+    background: linear-gradient(
+        to bottom, 
+        var(--light-slate-blue), 
+        var(--light-royal-blue)
+    );
+    color: var(--light-lavender);
+    text-align: center;
+    padding: 24px 50px 40px;
+    border-radius: 0 0 32px 32px;
+}
+
+.results-title {
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--light-lavender);
+    margin-bottom: 25px;
+}
+
+.score-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: linear-gradient(
+        to bottom, 
+        var(--violet-blue), 
+        var(--persian-blue)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px;
+}
+
+.score-number {
+    font-size: 4rem;
+    font-weight: var(--font-weight-extra-bold);
+    color: var(--white);
+    line-height: 1;
+}
+
+.score-total {
+    font-size: 0.9rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--light-lavender);
+}
+
+.score-rank {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 10px;
+}
+
+.score-message {
+    color: var(--light-lavender);
+    font-weight: var(--font-weight-medium);
+    margin: 0 auto;
+    max-width: 260px;
+}
+
+/* --- 2. Summary Section --- */
+.summary {
+    padding: 25px 30px 40px;
+}
+
+.summary-title {
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--dark-gray-blue);
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: var(--font-weight-medium);
+}
+
+.item-name-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.item-score {
+    color: var(--dark-gray-blue);
+    font-weight: var(--font-weight-extra-bold);
+}
+
+.item-score .total-score {
+    color: hsla(224, 30%, 27%, 0.5); /* 50% opacity of dark-gray-blue */
+    font-weight: var(--font-weight-bold);
+}
+
+/* Individual Item Styling */
+.item-reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.item-reaction .item-name-icon span {
+    color: var(--light-red);
+}
+
+.item-memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.item-memory .item-name-icon span {
+    color: var(--orangey-yellow);
+}
+
+.item-verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.item-verbal .item-name-icon span {
+    color: var(--green-teal);
+}
+
+.item-visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+.item-visual .item-name-icon span {
+    color: var(--cobalt-blue);
+}
+
+/* Continue Button */
+.btn-continue {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--dark-gray-blue);
+    border-radius: 30px;
+    font-weight: var(--font-weight-bold);
+    transition: background-color 0.3s ease;
+}
+
+/* Hover/Focus State for Button */
+.btn-continue:hover,
+.btn-continue:focus {
+    background: linear-gradient(
+        to bottom, 
+        var(--light-slate-blue), 
+        var(--light-royal-blue)
+    );
+}
+
+/* --- Desktop Styles --- */
+@media (min-width: 768px) {
+    body {
+        /* Set font size for a slightly smaller, desktop-friendly look */
+        font-size: 16px; 
+    }
+    
+    .component {
+        display: flex;
+        width: 736px;
+        min-height: 500px;
+        border-radius: 32px;
+        /* Box shadow for desktop */
+        box-shadow: 0 10px 40px hsla(241, 81%, 54%, 0.2); 
+    }
+
+    .results {
+        flex: 1;
+        border-radius: 32px;
+        padding: 35px 50px 50px;
+    }
+
+    .results-title {
+        font-size: 1.3rem;
+        margin-bottom: 35px;
+    }
+
+    .score-circle {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+
+    .score-number {
+        font-size: 4.5rem;
+    }
+
+    .score-total {
+        font-size: 1.1rem;
+    }
+
+    .score-rank {
+        font-size: 2rem;
+    }
+
+    .score-message {
+        max-width: 280px;
+        font-size: 1.1rem;
+    }
+
+    .summary {
+        flex: 1;
+        padding: 35px 40px 40px;
+    }
+
+    .summary-title {
+        font-size: 1.3rem;
+    }
+
+    .summary-item {
+        padding: 18px 16px;
+    }
+}
+
+/* --- Footer/Attribution (Keep for submission) --- */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 767px) {
+    .attribution {
+        position: static;
+        margin-top: 20px;
+    }
+}
