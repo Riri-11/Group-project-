@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Summary Component</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+</head>
+<body>
+    <main class="component">
+        <section class="results">
+            <h1 class="results-title">Your Result</h1>
+            <div class="score-circle">
+                <span class="score-number">76</span>
+                <span class="score-total">of 100</span>
+            </div>
+            <div class="score-text">
+                <p class="score-rank">Great</p>
+                <p class="score-message">You scored higher than 65% of the people who have taken these tests.</p>
+            </div>
+        </section>
+
+        <section class="summary">
+            <h2 class="summary-title">Summary</h2>
+            <div class="summary-items">
+                <div class="summary-item item-reaction">
+                    <div class="item-name-icon">
+                        <img src="./assets/images/icon-reaction.svg" alt="Reaction icon">
+                        <span>Reaction</span>
+                    </div>
+                    <div class="item-score">
+                        <span class="current-score">80</span> <span class="total-score">/ 100</span>
+                    </div>
+                </div>
+
+                <div class="summary-item item-memory">
+                    <div class="item-name-icon">
+                        <img src="./assets/images/icon-memory.svg" alt="Memory icon">
+                        <span>Memory</span>
+                    </div>
+                    <div class="item-score">
+                        <span class="current-score">92</span> <span class="total-score">/ 100</span>
+                    </div>
+                </div>
+
+                <div class="summary-item item-verbal">
+                    <div class="item-name-icon">
+                        <img src="./assets/images/icon-verbal.svg" alt="Verbal icon">
+                        <span>Verbal</span>
+                    </div>
+                    <div class="item-score">
+                        <span class="current-score">61</span> <span class="total-score">/ 100</span>
+                    </div>
+                </div>
+
+                <div class="summary-item item-visual">
+                    <div class="item-name-icon">
+                        <img src="./assets/images/icon-visual.svg" alt="Visual icon">
+                        <span>Visual</span>
+                    </div>
+                    <div class="item-score">
+                        <span class="current-score">72</span> <span class="total-score">/ 100</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn-continue">Continue</a>
+        </section>
+    </main>
+
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Group 5</a>.
+    </footer>
+</body>
+</html>
