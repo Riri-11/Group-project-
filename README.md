@@ -1,19 +1,19 @@
 # Group-project-
 #  Group members
 
-| Name             | Roll Number|
+   Name               | Roll Number|
 
-| Rihana Shemsu    |    42      |
+1. Rihana Shemsu    |    42      |
 
-| Yididiya Mindaye |    55      | 
+2. Yididiya Mindaye |    55      | 
 
-| Fromi Teshome    |    20      |
+3. Fromi Teshome    |    20      |
 
-| Hana Melese      |    23      |
+4. Hana Melese      |    23      |
 
-| Eyerus Aderajew  |    15      |
+5. Eyerus Aderajew  |    15      |
 
-| Sosina Asfaw     |            |
+6. Sosina Asfaw     |            |
 
 # Group Two #
 
